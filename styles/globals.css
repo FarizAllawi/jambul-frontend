@@ -1,9 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 a {
@@ -14,3 +17,64 @@ a {
 * {
   box-sizing: border-box;
 }
+
+
+.header-container {
+  @apply relative w-screen h-screen;
+  background: rgb(11,84,53);
+  background: linear-gradient(90deg, rgba(11,84,53,1) 0%, rgba(94,154,94,1) 35%, rgba(120,157,87,1) 50%, rgba(94,154,94,1) 65%, rgba(11,84,53,1) 100%);
+  overflow-x: hidden;
+}
+
+.font-header {
+  width: 100%;
+  header: 100%;
+}
+
+.elipse-left {
+  @apply absolute top-40 bg-yellow-100;
+  width: 50vw;
+  height: 30vh;
+  left:0;
+  clip-path: ellipse(52% 50%);
+}
+
+.elipse-right {
+  @apply absolute top-40 bg-yellow-100;
+  width: 50vw;
+  height: 30vh;
+  right:0;
+  clip-path: ellipse(52% 50%);
+}
+
+.circle-yellow-left {
+  @apply absolute  bg-yellow-300 blur-2xl shadow-2xl shadow-yellow-300;
+  left: 0;
+  width: 25vw;
+  margin-top:50vh;
+  box-shadow: 0px 0px 200px 200px rgba(250, 255, 0, .3);
+}
+
+.circle-yellow-right {
+  @apply absolute  bg-yellow-300 blur-2xl shadow-2xl shadow-yellow-300;
+  right:0;
+  width: 25vw;
+  margin-top:100vh;
+  box-shadow: 0px 0px 200px 200px rgba(250, 255, 0, .3);
+}
+
+.circle-green-left {
+  @apply absolute  bg-green-900 blur-2xl shadow-2xl shadow-green-900;
+  left: 0;
+  width: 25vw;
+  margin-top:150vh;
+  box-shadow: 0px 0px 200px 200px rgba(11, 84, 53, 0.4);
+}
+
+.content {
+  @apply relative w-screen bg-yellow-50; 
+  height: auto;
+  z-index:3;
+  overflow-x: hidden;
+} 
+
