@@ -1,9 +1,18 @@
 module.exports = {
-    lime: {
-        600: "789d57",
-        700: "5e9a5e",
+    transparent: 'transparent',
+    current: 'currentColor',
+    'white': '#ffffff',
+    'yellow': {
+        50: "#fffbeb",
+        100: "#fef9c3",
+        300: "#fde047",
     },
-    green: {
-        900: "0b5435",
+    'lime': {
+        400: "#cccc33",
+        600: "#789d57",
+        700: "#5e9a5e",
+    },
+    'green': {
+        900: "#0b5435",
     }
 }

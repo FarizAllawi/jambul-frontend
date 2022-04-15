@@ -31,18 +31,22 @@ a {
   header: 100%;
 }
 
+.logo-taniGN {
+  @apply object-none md:object-fill z-10;
+}
+
+.logo-jambul {
+  @apply object-none lg:object-fill z-50;
+}
+
 .elipse-left {
   @apply absolute top-40 bg-yellow-100;
-  width: 50vw;
-  height: 30vh;
   left:0;
   clip-path: ellipse(52% 50%);
 }
 
 .elipse-right {
   @apply absolute top-40 bg-yellow-100;
-  width: 50vw;
-  height: 30vh;
   right:0;
   clip-path: ellipse(52% 50%);
 }
@@ -56,7 +60,7 @@ a {
 }
 
 .circle-yellow-right {
-  @apply absolute  bg-yellow-300 blur-2xl shadow-2xl shadow-yellow-300;
+  @apply absolute z-10 bg-yellow-300 blur-2xl shadow-2xl shadow-yellow-300;
   right:0;
   width: 25vw;
   margin-top:100vh;
@@ -64,17 +68,34 @@ a {
 }
 
 .circle-green-left {
-  @apply absolute  bg-green-900 blur-2xl shadow-2xl shadow-green-900;
+  @apply absolute z-10 bg-lime-700 blur-2xl shadow-2xl shadow-lime-700;
   left: 0;
   width: 25vw;
   margin-top:150vh;
   box-shadow: 0px 0px 200px 200px rgba(11, 84, 53, 0.4);
 }
 
+.circle-green-right {
+  @apply absolute z-10 bg-lime-700 blur-2xl shadow-2xl shadow-lime-700;
+  right: 0;
+  width: 25vw;
+  margin-top:225vh;
+  box-shadow: 0px 0px 200px 200px rgba(11, 84, 53, 0.4);
+}
+
 .content {
   @apply relative w-screen bg-yellow-50; 
   height: auto;
-  z-index:3;
   overflow-x: hidden;
 } 
+
+.content .container {
+  @apply relative z-20;
+
+}
+
+.card-image {
+  border-top-left-radius: 32%;
+  border-bottom-right-radius: 32%;
+}
 
