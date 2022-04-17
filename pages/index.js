@@ -44,7 +44,7 @@ export default function Home() {
                         <div className='circle-green-left z-10'></div>
                         <div className='circle-green-right z-10'></div>
 
-                        <div className="content -mt-32 md:-mt-28">
+                        <div className="content -mt-32 md:-mt-28 lg:-mt-32">
                             <div className="container mx-auto lg:px-20 md:px-5">
                                 <div className="w-full h-auto lg:mt-20 bg-white bg-opacity-20 backdrop-blur-sm">
                                     <div className="grid grid-cols-2 px-6 py-6 lg:px-16 lg:py-16 xl:px-32 xl:py-32 md:px-8 md:p-16">
