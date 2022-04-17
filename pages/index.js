@@ -9,7 +9,9 @@ import produkKerupuk from '../public/images/produk-kerupuk.png'
 import produkDodol from '../public/images/produk-dodol.png'
 import produkJambuBiji from '../public/images/produk-jambu-biji.png'
 import produkJambuKristal from '../public/images/produk-jambu-kristal.png'
-
+import headerProdukInovatif from '../public/images/header-produk-inovatif.svg'
+import produkInovatifDodol from '../public/images/produk-inovatif-dodol.svg'
+import produkInovatifKerupuk from '../public/images/produk-inovatif-kerupuk.svg'
 
 
 // import '../styles/global.css'
@@ -28,7 +30,7 @@ export default function Home() {
                         <div className="flex place-content-center md:mt-8">
                             <Image src={logoTaniGN} className="logo-taniGN"/>
                         </div>
-                        <div className="flex place-content-center  md:mt-5">
+                        <div className="flex place-content-center px-4 md:mt-5">
                             <Image src={fontHeader} className="font-header"/>
                         </div>
                         <div className="flex place-content-center -mt-36 sm:-mt-48 md:-mt-44 lg:-mt-40">
@@ -119,19 +121,69 @@ export default function Home() {
                                         </div>
                                     </div>
 
-                                    <div className="flex place-content-center w-full lg:h-64 sm:h-32 h-24 bg-lime-400">
+                                    <div className="flex place-content-center w-full md:h-32 lg:h-72 xl:h-64 sm:h-40 h-24 bg-lime-400">
                                         <div className='lg:mt-24 sm:mt-9 mt-6 text-center font-bold lg:text-3xl sm:text-xl text-xs'>
                                             BUAH PILIHAN * KUALITAS TERJAMIN * HIGIENIS * TERJANGKAU <br></br>* BAHAN ALAMI * TIDAK ADA PENGAWET
                                         </div>
                                     </div>
-
-                                    {/* <div className="flex px-32 pt-32 pb-16">
-                                        <div className="w-full">
-                                            <p className="text-3xl font-extrabold">Produk Inovatif dan Variatif</p>
-                                            <p className="text-base font-semibold">sudah melewati proses quality control</p>
+                                    
+                                    <div className="flex place-content-center mt-1">
+                                        <Image src={headerProdukInovatif} className="header-produk-inovatif"/>
+                                        <div className="absolute left-0 sm:w-7/12 w-3/5 md:w-4/6 lg:w-2/4 z-10 px-2 py-2 sm:px-6 sm:py-6 md:px-8 md:py-8 ">
+                                                <p className="text-xl text-base sm:text-xl md:text-2xl xl:text-3xl font-bold sm:font-extrabold">Produk Inovatif dan Variatif</p>
+                                                <p className="sm:w-full md:w-4/5 text-xs sm:text-sm lg:text-base font-semibold sm:mt-3 mt-2">
+                                                    Pengolahan dilakukan untuk menciptakan produk 
+                                                    turunan Jambu Biji yang lebih Variatif dan Inovatif
+                                                    Ada berbagai jenis variasi pengolahan jambu biji
+                                                    yang berguna selain agar produknya lebih awet.
+                                                </p>
                                         </div>
-                                        
-                                    </div> */}
+                                    </div>
+                                    <div className="flex place-content-center sm:mt-24 mt-32">
+                                        <Image src={produkInovatifDodol} className="header-produk-inovatif"/>
+                                        <div className="absolute right-0 text-right sm:w-7/12 md:w-4/6 lg:w-2/4 z-10 px-2 py-2 sm:px-6 sm:py-6 mt-6 sm:mt-12 xl:mt-20">
+                                                <p className="text-xl text-base sm:text-xl md:text-2xl xl:text-3xl font-bold sm:font-extrabold">Dodol Jambu Biji</p>
+                                                <p className=" text-right text-xs sm:text-sm lg:text-base font-semibold sm:mt-3 mt-2">
+                                                   Tanpa Bahan Pengawet <br></br>
+                                                    Tanpa Pewarna Buatan <br></br>
+                                                    Rasa Empuk dan Manis <br></br>
+                                                    Bertahan 3 - 4 Bulan <br></br>
+                                                    Lembut dan tidak keras <br></br>
+                                                </p>
+                                        </div>
+                                    </div>
+                                    <div className="flex place-content-center -mt-1">
+                                        <Image src={produkInovatifKerupuk} className="header-produk-inovatif"/>
+                                        <div className="absolute left-0 w-3/5 sm:w-7/12 md:w-4/6 lg:w-2/4 z-10 px-2 py-2 sm:px-6 sm:py-6">
+                                                <p className="text-xl text-base sm:text-xl md:text-2xl xl:text-3xl font-bold sm:font-extrabold">Kerupuk Jambu Biji</p>
+                                                <p className="sm:w-full md:w-4/5 text-xs sm:text-sm lg:text-base font-semibold sm:mt-3 mt-2">
+                                                    Tanpa Bahan Pengawet <br></br>
+                                                    Tanpa Pewarna Buatan <br></br>
+                                                    Pewarna buah Jambu <br></br>
+                                                    Rasa Jambu masih terasa <br></br>
+                                                    Gurih, harum Jambu
+                                                </p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div className="grid grid-cols-2 place-content-center gap-4 mx-24 my-40">
+                                        <div className="col-start-1 col-end-2">
+                                            <div className='flex justify-center items-center h-full'>
+                                                <div className="text-xl font-medium">
+                                                    Memanfaatkan tanaman dari
+                                                    buah - buahan yang melimpah di
+                                                    desa Gunung Mulya untuk dijadikan
+                                                    olahan seperti Inovasi kami yaitu
+                                                    Dodol dan Kerupuk.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="col-start-2 col-end-3">
+                                            <div className='flex justify-center items-center'>
+                                                <Image src={produkJambuBiji} className=""/>
+                                            </div>      
+                                        </div>
+                                    </div>
 
 
                                 </div>
