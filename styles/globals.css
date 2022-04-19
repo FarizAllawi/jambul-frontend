@@ -62,6 +62,14 @@ a {
   box-shadow: 0px 0px 200px 200px rgba(250, 255, 0, .3);
 }
 
+.circle-yellow2-left {
+  @apply absolute  bg-yellow-300 blur-2xl shadow-2xl shadow-yellow-300;
+  left: 0;
+  width: 25vw;
+  margin-top:250vh;
+  box-shadow: 0px 0px 200px 200px rgba(250, 255, 0, .3);
+}
+
 .circle-yellow-right {
   @apply absolute z-10 bg-yellow-300 blur-2xl shadow-2xl shadow-yellow-300;
   right:0;
@@ -70,11 +78,43 @@ a {
   box-shadow: 0px 0px 200px 200px rgba(250, 255, 0, .3);
 }
 
+.circle-yellow2-right {
+  @apply absolute z-10 bg-yellow-300 blur-2xl shadow-2xl shadow-yellow-300;
+  right:0;
+  width: 25vw;
+  margin-top:350vh;
+  box-shadow: 0px 0px 200px 200px rgba(250, 255, 0, .3);
+}
+
+.circle-yellow3-left {
+  @apply absolute  bg-yellow-300 blur-2xl shadow-2xl shadow-yellow-300;
+  left: 0;
+  width: 25vw;
+  margin-top:580vh;
+  box-shadow: 0px 0px 200px 200px rgba(250, 255, 0, .3);
+}
+
+.circle-yellow3-right {
+  @apply absolute z-10 bg-yellow-300 blur-2xl shadow-2xl shadow-yellow-300;
+  right:0;
+  width: 25vw;
+  margin-top:580vh;
+  box-shadow: 0px 0px 200px 200px rgba(250, 255, 0, .3);
+}
+
+
 .circle-green-left {
   @apply absolute z-10 bg-lime-700 blur-2xl shadow-2xl shadow-lime-700;
   left: 0;
   width: 25vw;
   margin-top:150vh;
+  box-shadow: 0px 0px 200px 200px rgba(11, 84, 53, 0.4);
+}
+.circle-green2-left {
+  @apply absolute z-10 bg-lime-700 blur-2xl shadow-2xl shadow-lime-700;
+  left: 0;
+  width: 25vw;
+  margin-top:480vh;
   box-shadow: 0px 0px 200px 200px rgba(11, 84, 53, 0.4);
 }
 
@@ -86,11 +126,42 @@ a {
   box-shadow: 0px 0px 200px 200px rgba(11, 84, 53, 0.4);
 }
 
+.circle-green2-right {
+  @apply absolute z-10 bg-lime-700 blur-2xl shadow-2xl shadow-lime-700;
+  right: 0;
+  width: 25vw;
+  margin-top:480vh;
+  box-shadow: 0px 0px 200px 200px rgba(11, 84, 53, 0.4);
+}
+
+.circle-green4-left {
+  @apply absolute z-10 bg-lime-700 blur-2xl shadow-2xl shadow-lime-700;
+  left: 0;
+  width: 25vw;
+  margin-top:600vh;
+  box-shadow: 0px 0px 200px 200px rgba(11, 84, 53, 0.4);
+}
+
+.circle-green4-right {
+  @apply absolute z-10 bg-lime-700 blur-2xl shadow-2xl shadow-lime-700;
+  right: 0;
+  width: 25vw;
+  margin-top:600vh;
+  box-shadow: 0px 0px 200px 200px rgba(11, 84, 53, 0.4);
+}
+
+
+
 .content {
   @apply relative w-screen bg-yellow-50; 
   height: auto;
   overflow-x: hidden;
 } 
+
+.footer {
+  @apply relative w-screen h-auto;
+  background-color: #FAF1E0;
+}
 
 .content .container {
   @apply relative z-20;

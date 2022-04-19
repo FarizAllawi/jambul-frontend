@@ -2,6 +2,10 @@ import Head from 'next/head'
 import Image from 'next/image'
 import logoTaniGN from '../public/images/logo-taniGN.svg'
 import logoJambul from '../public/images/logo-jambul.svg'
+import logoFontFillColor from '../public/images/logo-font-jambul-fillColor.svg'
+import logoTokopedia from '../public/images/logo-tokopedia.svg'
+import logoShopee from '../public/images/logo-shopee.svg'
+import logoInstagram from '../public/images/logo-instagram.svg'
 import packagingDodol from '../public/images/packaging-dodol.png'
 import bannerTengah from '../public/images/banner-tengah.png'
 import fontHeader from '../public/images/font-jambul-header.svg'
@@ -9,6 +13,7 @@ import produkKerupuk from '../public/images/produk-kerupuk.png'
 import produkDodol from '../public/images/produk-dodol.png'
 import produkJambuBiji from '../public/images/produk-jambu-biji.png'
 import produkJambuKristal from '../public/images/produk-jambu-kristal.png'
+import fontBannerProdukInovatif from '../public/images/font-banner-produk-inovatif.svg'
 import headerProdukInovatif from '../public/images/header-produk-inovatif.svg'
 import produkInovatifDodol from '../public/images/produk-inovatif-dodol.svg'
 import produkInovatifKerupuk from '../public/images/produk-inovatif-kerupuk.svg'
@@ -43,6 +48,13 @@ export default function Home() {
                         <div className="circle-yellow-right z-10"></div>
                         <div className='circle-green-left z-10'></div>
                         <div className='circle-green-right z-10'></div>
+                        <div className="circle-yellow2-left z-10"></div>
+                        <div className='circle-yellow2-right z-10'></div>
+                        <div className='circle-green2-left z-10'></div>
+                        <div className="circle-yellow3-left z-10"></div>
+                        <div className='circle-yellow3-right z-10'></div>
+                        <div className='circle-green-left4 z-10'></div>
+                        <div className='circle-green-right4 z-10'></div>
 
                         <div className="content -mt-32 md:-mt-28 lg:-mt-32">
                             <div className="container mx-auto lg:px-20 md:px-5">
@@ -121,16 +133,14 @@ export default function Home() {
                                         </div>
                                     </div>
 
-                                    <div className="flex place-content-center w-full md:h-32 lg:h-72 xl:h-64 sm:h-40 h-24 bg-lime-400">
-                                        <div className='lg:mt-24 sm:mt-9 mt-6 text-center font-bold lg:text-3xl sm:text-xl text-xs'>
-                                            BUAH PILIHAN * KUALITAS TERJAMIN * HIGIENIS * TERJANGKAU <br></br>* BAHAN ALAMI * TIDAK ADA PENGAWET
-                                        </div>
+                                    <div className="flex place-content-center w-full h-12 bg-lime-400 px-2 py-2 sm:px-6 md:px-8">
+                                        <Image src={fontBannerProdukInovatif} className="" />
                                     </div>
                                     
                                     <div className="flex place-content-center mt-1">
                                         <Image src={headerProdukInovatif} className="header-produk-inovatif"/>
                                         <div className="absolute left-0 sm:w-7/12 w-3/5 md:w-4/6 lg:w-2/4 z-10 px-2 py-2 sm:px-6 sm:py-6 md:px-8 md:py-8 ">
-                                                <p className="text-xl text-base sm:text-xl md:text-2xl xl:text-3xl font-bold sm:font-extrabold">Produk Inovatif dan Variatif</p>
+                                                <p className="text-base sm:text-xl md:text-2xl xl:text-3xl font-bold sm:font-extrabold">Produk Inovatif dan Variatif</p>
                                                 <p className="sm:w-full md:w-4/5 text-xs sm:text-sm lg:text-base font-semibold sm:mt-3 mt-2">
                                                     Pengolahan dilakukan untuk menciptakan produk 
                                                     turunan Jambu Biji yang lebih Variatif dan Inovatif
@@ -142,7 +152,7 @@ export default function Home() {
                                     <div className="flex place-content-center sm:mt-24 mt-32">
                                         <Image src={produkInovatifDodol} className="header-produk-inovatif"/>
                                         <div className="absolute right-0 text-right sm:w-7/12 md:w-4/6 lg:w-2/4 z-10 px-2 py-2 sm:px-6 sm:py-6 mt-6 sm:mt-12 xl:mt-20">
-                                                <p className="text-xl text-base sm:text-xl md:text-2xl xl:text-3xl font-bold sm:font-extrabold">Dodol Jambu Biji</p>
+                                                <p className="text-base sm:text-xl md:text-2xl xl:text-3xl font-bold sm:font-extrabold">Dodol Jambu Biji</p>
                                                 <p className=" text-right text-xs sm:text-sm lg:text-base font-semibold sm:mt-3 mt-2">
                                                    Tanpa Bahan Pengawet <br></br>
                                                     Tanpa Pewarna Buatan <br></br>
@@ -155,7 +165,7 @@ export default function Home() {
                                     <div className="flex place-content-center -mt-1">
                                         <Image src={produkInovatifKerupuk} className="header-produk-inovatif"/>
                                         <div className="absolute left-0 w-3/5 sm:w-7/12 md:w-4/6 lg:w-2/4 z-10 px-2 py-2 sm:px-6 sm:py-6">
-                                                <p className="text-xl text-base sm:text-xl md:text-2xl xl:text-3xl font-bold sm:font-extrabold">Kerupuk Jambu Biji</p>
+                                                <p className="text-base sm:text-xl md:text-2xl xl:text-3xl font-bold sm:font-extrabold">Kerupuk Jambu Biji</p>
                                                 <p className="sm:w-full md:w-4/5 text-xs sm:text-sm lg:text-base font-semibold sm:mt-3 mt-2">
                                                     Tanpa Bahan Pengawet <br></br>
                                                     Tanpa Pewarna Buatan <br></br>
@@ -166,10 +176,10 @@ export default function Home() {
                                         </div>
                                     </div>
                                     
-                                    <div className="grid grid-cols-2 place-content-center gap-4 mx-24 my-40">
-                                        <div className="col-start-1 col-end-2">
+                                    <div className="grid grid-cols-2 gap-4 place-content-center  sm:mx-24 mx-16 my-40">
+                                        <div className="col-start-1 col-end-3 row-start-2">
                                             <div className='flex justify-center items-center h-full'>
-                                                <div className="text-xl font-medium">
+                                                <div className="text-center sm:text-left text-base sm:text-xl font-medium">
                                                     Memanfaatkan tanaman dari
                                                     buah - buahan yang melimpah di
                                                     desa Gunung Mulya untuk dijadikan
@@ -178,14 +188,52 @@ export default function Home() {
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="col-start-2 col-end-3">
+                                        <div className="col-start-1 col-end-3 row-start-1">
                                             <div className='flex justify-center items-center'>
                                                 <Image src={produkJambuBiji} className=""/>
                                             </div>      
                                         </div>
                                     </div>
+                                </div>
+                                
 
-
+                            </div>
+                        </div>
+                        <div className='footer'>
+                            <div className='container mx-auto lg:px-20 md:px-5 h-auto'>
+                                <div className='bg-white bg-opacity-20 backdrop-blur-sm pt-14 pb-6 px-6 sm:px-12'>
+                                    <div className="w-52 sm:w-80">
+                                        <Image src={logoTaniGN} className=""/>
+                                        <div className="mt-1 sm:mt-4">
+                                            <Image src={logoFontFillColor} />
+                                        </div>
+                                    </div>
+                                    <div className="flex">
+                                        <div className="mt-24 w-1/2 float-left font-semibold text-sm sm:text-xl">
+                                            Contact Person <br></br>
+                                            Desa Gunung Mulya <br></br>
+                                            Tenjolaya, Bogor
+                                        </div>
+                                        <div className="relative mt-30 w-1/2 float-right ">
+                                            <div className="absolute right-0 bottom-0 text-right font-semibold text-sm sm:text-xl">
+                                                Find Us
+                                                <div className='w-full'>
+                                                    <span className='mr-2'>
+                                                        <Image src={logoTokopedia}/>
+                                                    </span>
+                                                    <span className="mr-2">
+                                                        <Image src={logoShopee}/>
+                                                    </span>
+                                                    <span className="">
+                                                        <Image src={logoInstagram}/>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className='flex place-content-center h-12 mt-12'>
+                                        <Image src={logoTaniGN} width="130" className='object-none sm:object-fill'/> <span className='text-xs sm:text-lg font-semibold mt-5 sm:mt-4 sm:ml-2'>&copy; 2022. All Rights Reserved</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
