@@ -177,7 +177,7 @@ export default function Home() {
                                     </div>
                                     
                                     <div className="grid grid-cols-2 gap-4 place-content-center  sm:mx-24 mx-16 my-40">
-                                        <div className="col-start-1 col-end-3 row-start-2">
+                                        <div className="col-start-1 col-end-3 row-start-2 sm:col-start-1 sm:col-end-2 sm:row-start-1">
                                             <div className='flex justify-center items-center h-full'>
                                                 <div className="text-center sm:text-left text-base sm:text-xl font-medium">
                                                     Memanfaatkan tanaman dari
@@ -188,7 +188,7 @@ export default function Home() {
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="col-start-1 col-end-3 row-start-1">
+                                        <div className="col-start-1 col-end-3 row-start-1 sm:col-start-2 sm:col-end-3 sm:row-start-1">
                                             <div className='flex justify-center items-center'>
                                                 <Image src={produkJambuBiji} className=""/>
                                             </div>      
