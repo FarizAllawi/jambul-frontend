@@ -237,9 +237,11 @@ export default function Home() {
                                                             <Image src={logoShopee}/>
                                                         </span>
                                                     </a>
-                                                    <span className="">
-                                                        <Image src={logoInstagram}/>
-                                                    </span>
+                                                    <a target="_blank" href="https://www.instagram.com/kkn_desagunungmulya07/" rel="noopener noreferrer">
+                                                        <span className="">
+                                                            <Image src={logoInstagram}/>
+                                                        </span>
+                                                    </a>
                                                 </div>
                                             </div>
                                         </div>
