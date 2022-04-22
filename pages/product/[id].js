@@ -33,8 +33,8 @@ function Product({data}) {
                         </div>
                         <div className="flex place-content-center -mt-36 sm:-mt-48 md:-mt-44 lg:-mt-40 xl:-mt-48">
                                 <Image src={logoJambul} className="logo-jambul"/>  
-                            <div className="elipse-left w-1/2 h-20  lg:h-36  -mt-10 md:mt-12 lg:mt-20"></div>
-                            <div className="elipse-right w-1/2 h-20 lg:h-36 -mt-10 md:mt-12 lg:mt-20"></div>
+                            <div className="elipse-left w-1/2 h-24 sm:h-32  md:h-44  -mt-10 md:mt-12 lg:mt-20"></div>
+                            <div className="elipse-right w-1/2 h-24 sm:h-32  md:h-44 -mt-10 md:mt-12 lg:mt-20"></div>
                         </div>
 
                         <div className="circle-yellow-left z-10"></div>
@@ -49,40 +49,53 @@ function Product({data}) {
                         <div className='circle-green-left4 z-10'></div>
                         <div className='circle-green-right4 z-10'></div>
 
-                        <div className="content -mt-32 md:-mt-20">
+                        <div className="content -mt-24 sm:-mt-24">
                             <div className="container mx-auto lg:px-20 md:px-5">
                                 <div className="w-full h-auto lg:mt-20 bg-white bg-opacity-20 backdrop-blur-sm">
-                                    <div className="grid grid-cols-2 px-6 py-6 lg:px-16 lg:py-16 xl:px-24 xl:py-24 md:px-8 md:p-16">
-                                        <div className="col-start-1 col-end-3 w-5/6 md:col-end-2 lg:col-start-1 md:row-start-1 row-start-2">
-                                            <p className="font-bold text-2xl xl:text-3xl tracking-wide mt-20po pz ">Deskripsi</p>
-                                            <p className="font-semibold sm:text-sm xl:text-lg mt-2">
-                                                { data.deskripsi }
-                                            </p>
-                                            <p className="font-bold text-2xl xl:text-3xl tracking-wide mt-6 ">Bahan</p>
-                                            <p className="font-semibold sm:text-sm xl:text-lg mt-2">
-                                                { data.bahan }
-                                            </p>
-                                            <p className="font-bold text-2xl xl:text-3xl tracking-wide mt-6 ">Order</p>
-                                            <div className="flex w-5/6 mt-2 gap-2">
-                                                <Link href={data.shopee}>
-                                                    <span className="flex place-content-center w-1/2 bg-lime-400 bg-opacity-40 rounded-full py-2 cursor-pointer">
-                                                        <Image src={logoShopeeText} height="32" className='object-contain'/>
-                                                    </span>
-                                                </Link>
-                                                <Link href={data.tokopedia}>
-                                                    <span className="flex place-content-center w-1/2 bg-lime-400 bg-opacity-40 rounded-full py-2 cursor-pointer">
-                                                        <Image src={logoTokopediaText} height="32" className='object-contain'/>
-                                                    </span>
-                                                </Link>
+                                    
+                                    { 
+                                        (data?.statusError) ? (
+                                            <div className="grid grid-cols-2 px-6 py-6 lg:px-16 lg:py-16 xl:px-24 xl:py-24 md:px-8 md:p-16">
+                                                <div className="col-start-1 col-end-3 row-start-1 mb-20 mt-20">
+                                                    <p className="text-center font-bold text-2xl text-green-900 xl:text-3xl tracking-wide mt-20">{data.statusError }</p>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div className="col-start-1 col-end-3 row-start-1 md:col-start-2 md:col-end-2 md:row-start-1 ">
-                                            <div className="h-auto">
-                                                <Image src={data.image} className="object-cover"/>
-                                            </div>
-                                            <p className="text-center font-bold text-2xl text-green-900 xl:text-3xl tracking-wide -mt-15 mb-16">Rp {data.harga}</p>
-                                        </div>
-                                    </div>
+                                            ) : (
+                                                <div className="grid grid-cols-2 px-6 py-6 lg:px-16 lg:py-16 xl:px-24 xl:py-24 md:px-8 md:p-16">
+                                                    <div className="col-start-1 col-end-3 w-5/6 md:col-end-2 lg:col-start-1 md:row-start-1 row-start-2">
+                                                        <p className="font-bold text-2xl xl:text-3xl tracking-wide mt-20 ">Deskripsi</p>
+                                                        <p className="font-semibold sm:text-sm xl:text-lg mt-2">
+                                                            { data.deskripsi }
+                                                        </p>
+                                                        <p className="font-bold text-2xl xl:text-3xl tracking-wide mt-6 ">Bahan</p>
+                                                        <p className="font-semibold sm:text-sm xl:text-lg mt-2">
+                                                            { data.bahan }
+                                                        </p>
+                                                        <p className="font-bold text-2xl xl:text-3xl tracking-wide mt-6 ">Order</p>
+                                                        <div className="flex w-5/6 mt-2 gap-2 mb-16 lg:mb-0">
+                                                            <Link href={data.shopee}>
+                                                                <span className="flex place-content-center w-1/2 bg-lime-400 bg-opacity-40 rounded-full py-2 cursor-pointer">
+                                                                    <Image src={logoShopeeText} height="32" className='object-contain'/>
+                                                                </span>
+                                                            </Link>
+                                                            <Link href={data.tokopedia}>
+                                                                <span className="flex place-content-center w-1/2 bg-lime-400 bg-opacity-40 rounded-full py-2 cursor-pointer">
+                                                                    <Image src={logoTokopediaText} height="32" className='object-contain'/>
+                                                                </span>
+                                                            </Link>
+                                                        </div>
+                                                    </div>
+                                                    <div className="col-start-1 col-end-3 row-start-1 md:col-start-2 md:col-end-2 md:row-start-1 ">
+                                                        <div className="flex h-auto place-content-center">
+                                                            <Image src={data.image} className="object-cover"/>
+                                                        </div>
+                                                        <p className="text-center font-bold text-2xl text-green-900 xl:text-3xl tracking-wide -mt-15 lg:mb-16">Rp {data.harga}</p>
+                                                    </div>
+                                                </div>
+                                            )
+                                    }
+
+                                    
                                 </div>
                             </div>
                         </div>
@@ -191,7 +204,11 @@ Product.getInitialProps = (props) => {
             }
         }
     })
-    
+    if (Object.keys(data).length === 0) {
+        data = {
+            'statusError': "Opps halaman yang ingin kamu lihat tidak tersedia"
+        }
+    }
     return {data}
 }
 

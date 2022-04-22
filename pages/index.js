@@ -39,10 +39,10 @@ export default function Home() {
                         <div className="flex place-content-center px-4 md:mt-5">
                             <Image src={fontHeader} className="font-header"/>
                         </div>
-                        <div className="flex place-content-center -mt-36 sm:-mt-48 md:-mt-44 lg:-mt-40">
+                        <div className="flex place-content-center -mt-36 sm:-mt-48 md:-mt-44 lg:-mt-40 xl:-mt-48">
                                 <Image src={logoJambul} className="logo-jambul"/>  
-                            <div className="elipse-left w-1/2 h-20  lg:h-32  -mt-10 md:mt-12 lg:mt-20"></div>
-                            <div className="elipse-right w-1/2 h-20 lg:h-32 -mt-10 md:mt-12 lg:mt-20"></div>
+                            <div className="elipse-left w-1/2 h-24 sm:h-32  md:h-44  -mt-10 md:mt-12 lg:mt-20"></div>
+                            <div className="elipse-right w-1/2 h-24 sm:h-32  md:h-44 -mt-10 md:mt-12 lg:mt-20"></div>
                         </div>
 
                         <div className="circle-yellow-left z-10"></div>
@@ -57,7 +57,7 @@ export default function Home() {
                         <div className='circle-green-left4 z-10'></div>
                         <div className='circle-green-right4 z-10'></div>
 
-                        <div className="content -mt-32 md:-mt-28 lg:-mt-32">
+                        <div className="content -mt-28 sm:-mt-24">
                             <div className="container mx-auto lg:px-20 md:px-5">
                                 <div className="w-full h-auto lg:mt-20 bg-white bg-opacity-20 backdrop-blur-sm">
                                     <div className="grid grid-cols-2 px-6 py-6 lg:px-16 lg:py-16 xl:px-32 xl:py-32 md:px-8 md:p-16">
