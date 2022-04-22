@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import logoTaniGN from '../public/images/logo-taniGN.svg'
 import logoJambul from '../public/images/logo-jambul.svg'
 import logoFontFillColor from '../public/images/logo-font-jambul-fillColor.svg'
@@ -88,52 +89,60 @@ export default function Home() {
                                         
                                     </div>
                                     <div className="grid grid-cols-3 gap-8 px-6 py-6 lg:px-16 lg:pb-16 xl:px-32 xl:pb-32 md:px-8 2xl:px-32 2xl:pb-16">
-                                        <div className='row-start-1 col-start-1 col-end-4 sm:col-end-1'>
-                                            <div className="bg-white rounded-lg">
-                                                <div className='bg-lime-400 card-image'>
-                                                    <Image src={produkDodol} className=""/>      
-                                                </div>
-                                                <div className="py-5 px-3 font-bold text-center">
-                                                    Dodol JAMBU
+                                        <Link href='/product/dodol-jambu'>
+                                            <div className='row-start-1 col-start-1 col-end-4 sm:col-end-1 cursor-pointer'>
+                                                <div className="bg-white rounded-lg">
+                                                    <div className='bg-lime-400 card-image'>
+                                                        <Image src={produkDodol} className=""/>      
+                                                    </div>
+                                                    <div className="py-5 px-3 font-bold text-center">
+                                                        Dodol JAMBU
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </Link>
 
-                                        <div className='row-start-2 col-start-1 col-end-4 sm:row-start-1 sm:col-start-2 sm:col-end-2'>
-                                            <div className="bg-white rounded-lg">
-                                                <div className='bg-lime-400 card-image'>
-                                                    <Image src={produkKerupuk} className=""/>      
-                                                </div>
-                                                <div className="py-5 px-3 font-bold text-center">
-                                                    Kerupuk JAMBU
+                                        <Link href='/product/kerupuk-jambu'>
+                                            <div className='row-start-2 col-start-1 col-end-4 sm:row-start-1 sm:col-start-2 sm:col-end-2 cursor-pointer'>
+                                                <div className="bg-white rounded-lg">
+                                                    <div className='bg-lime-400 card-image'>
+                                                        <Image src={produkKerupuk} className=""/>      
+                                                    </div>
+                                                    <div className="py-5 px-3 font-bold text-center">
+                                                        Kerupuk JAMBU
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </Link>
 
-                                        <div className="row-start-3 col-start-1 col-end-4 sm:row-start-1 sm:col-start-3 sm:col-end-3">
-                                        <div className="bg-white rounded-lg">
-                                                <div className='bg-lime-400 card-image'>
-                                                    <Image src={produkJambuKristal} className=""/>      
-                                                </div>
-                                                <div className="py-5 px-3 font-bold text-center">
-                                                    Jambu Kristal
+                                        <Link href='/product/jambu-kristal'>
+                                            <div className="row-start-3 col-start-1 col-end-4 sm:row-start-1 sm:col-start-3 sm:col-end-3 cursor-pointer">
+                                                <div className="bg-white rounded-lg">
+                                                    <div className='bg-lime-400 card-image'>
+                                                        <Image src={produkJambuKristal} className=""/>      
+                                                    </div>
+                                                    <div className="py-5 px-3 font-bold text-center">
+                                                        Jambu Kristal
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </Link>
 
-                                        <div className='row-start-4 col-start-1 col-end-4 sm:row-start-2 sm:col-start-2 sm:col-end-2'>
-                                            <div className="bg-white rounded-lg">
-                                                <div className='bg-lime-400 card-image'>
-                                                    <Image src={produkJambuBiji} className=""/>      
-                                                </div>
-                                                <div className="py-5 px-3 font-bold text-center">
-                                                    Jambu Merah
+                                        <Link href='/product/jambu-merah'>    
+                                            <div className='row-start-4 col-start-1 col-end-4 sm:row-start-2 sm:col-start-2 sm:col-end-2 cursor-pointer'>
+                                                <div className="bg-white rounded-lg">
+                                                    <div className='bg-lime-400 card-image'>
+                                                        <Image src={produkJambuBiji} className=""/>      
+                                                    </div>
+                                                    <div className="py-5 px-3 font-bold text-center">
+                                                        Jambu Merah
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </Link>
                                     </div>
 
-                                    <div className="flex place-content-center w-full h-12 bg-lime-400 px-2 py-2 sm:px-6 md:px-8">
+                                    <div className="flex place-content-center w-full h-12 bg-lime-400 px-2 py-2 sm:px-6 md:px-8 cursor-pointer">
                                         <Image src={fontBannerProdukInovatif} className="" />
                                     </div>
                                     
@@ -218,12 +227,16 @@ export default function Home() {
                                             <div className="absolute right-0 bottom-0 text-right font-semibold text-sm sm:text-xl">
                                                 Find Us
                                                 <div className='w-full'>
-                                                    <span className='mr-2'>
-                                                        <Image src={logoTokopedia}/>
-                                                    </span>
-                                                    <span className="mr-2">
-                                                        <Image src={logoShopee}/>
-                                                    </span>
+                                                    <a target="_blank" href="https://www.tokopedia.com/jambulmulya" rel="noopener noreferrer">
+                                                        <span className='mr-2'>
+                                                            <Image src={logoTokopedia}/>
+                                                        </span>
+                                                    </a>
+                                                    <a target="_blank" href="https://shopee.co.id/jambulmulya" rel="noopener noreferrer">
+                                                        <span className="mr-2 cursor-pointer">
+                                                            <Image src={logoShopee}/>
+                                                        </span>
+                                                    </a>
                                                     <span className="">
                                                         <Image src={logoInstagram}/>
                                                     </span>
